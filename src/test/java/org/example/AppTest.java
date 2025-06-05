@@ -6,9 +6,17 @@ package org.example;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
+import java.beans.Transient;
+
 public class AppTest {
+   
     @Test public void appHasAGreeting() {
         App classUnderTest = new App();
-        assertNotNull("app should have a greeting", classUnderTest.getGreeting());
+        assertNotNull("app should have a greeting1", classUnderTest.getGreeting());
+    } 
+    @Test
+    public void appHasHelloWorld() {
+        App classUnderTest = new App();
+        assertEquals("app should return 'Hello World!'", "Hello", classUnderTest.getGreetingHello());
     }
 }
