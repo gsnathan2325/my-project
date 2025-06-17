@@ -9,7 +9,7 @@ public class App {
         return "Hello World!";
     }
      public String getGreetingHello() {
-        return "Hello";
+       return "TEsting";
     }
 
     public static void main(String[] args) {
